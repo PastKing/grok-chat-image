@@ -115,23 +115,6 @@ async function handleRequest(request) {
       } else {
         // 常规JSON解析
         requestData = JSON.parse(requestBody);
-        
-        // 验证请求合法性（可选）
-        // 如果需要强制验证，取消下面的注释
-        /*
-        if (!verifyRequest(request, requestData)) {
-          return new Response(
-            JSON.stringify({ error: "请求验证失败" }),
-            {
-              status: 403,
-              headers: {
-                "Content-Type": "application/json",
-                "Access-Control-Allow-Origin": "*",
-              },
-            }
-          );
-        }
-        */
       }
       
       const prompt = requestData.prompt;
@@ -148,7 +131,7 @@ async function handleRequest(request) {
 
       // 调用Grok API生成图像
       const apiBase = "https://api.x.ai";
-      const apiKey = "xai-123456";
+      const apiKey = "xai-123456"; // 注意修改
       const model = "grok-2-image";
       const n = 1;
       const responseFormat = "url";
