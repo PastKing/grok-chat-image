@@ -440,7 +440,7 @@ function getHtmlContent() {
       
       <!-- 页脚 -->
       <footer class="mt-6 text-center text-sm text-gray-500">
-        <p>© 2024 Grok 图像生成 | 使用 Tailwind CSS 构建 | 作者 <a href="https://linux.do/u/pastking/summary" class="text-primary-600 hover:text-primary-700 hover:underline" target="_blank">@PastKing</a></p>
+        <p>© 2024 Grok 图像生成 | 使用 Tailwind CSS 构建 | 作者 <a href="https://github.com/PastKing/grok-chat-image" class="text-primary-600 hover:text-primary-700 hover:underline" target="_blank">@PastKing</a></p>
       </footer>
     </div>
   
